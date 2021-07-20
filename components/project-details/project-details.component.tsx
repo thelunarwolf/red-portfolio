@@ -32,13 +32,13 @@ export default function ProjectDetails(props: any) {
                     </div>
                 </div>
             </section>
-            <footer className={styles.footer}>
+            {/* <footer className={styles.footer}>
                 <p className={styles.copyright}>© 2021 Virija Tejavath | virijaxx@gmail.com</p>
                 <div className={styles.icons}>
                     <FontAwesomeIcon className={styles.icon} icon={faBehance} />
                     <FontAwesomeIcon className={styles.icon} icon={faLinkedin} />
                 </div>
-            </footer>
+            </footer> */}
         </div>
     )
 }

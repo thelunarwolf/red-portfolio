@@ -4,7 +4,7 @@ import LOGO from './../../public/logo.png';
 import Image from 'next/image';
 import { useRouter } from 'next/dist/client/router';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBehance, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faBehance, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 
 export default function Layout(props: any) {
@@ -32,8 +32,12 @@ export default function Layout(props: any) {
             <footer className={styles.footer}>
                 <p className={styles.copyright}>© 2021 Virija Tejavath | virijaxx@gmail.com</p>
                 <div className={styles.icons}>
-                    <FontAwesomeIcon className={styles.icon} icon={faBehance} />
-                    <FontAwesomeIcon className={styles.icon} icon={faLinkedin} />
+                    <div className={styles.icon_circle}>
+                      <FontAwesomeIcon className={styles.icon} icon={faBehance} />
+                    </div>
+                    <div className={styles.icon_circle}>
+                      <FontAwesomeIcon className={styles.icon} icon={faLinkedinIn} />
+                    </div>
                 </div>
             </footer>
         </div>

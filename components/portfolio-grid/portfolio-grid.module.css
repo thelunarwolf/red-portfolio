@@ -1,20 +1,52 @@
+.grid_component {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.filter_list>ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    padding: 24px 0px;
+    column-gap: 30px;
+}
+
+.filter_item {
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+    color: var(--base-color-40);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.active_item {
+    color: var(--text-color);
+}
+
+.portfolio_container {
+    flex: 1;
+    overflow-x: auto;
+    margin-bottom: 36px;
+    margin-right: 0px;
+}
+
 .portfolio_grid {
     display: grid;
     grid-template-columns: repeat(20, 1fr);
     grid-template-rows: repeat(8, 1fr);
-    /* row-gap: 10px;
-    column-gap: 10px; */
     gap: 10px;
-    padding: 30px;
-    margin-left: 130px;
+    margin-left: 160px;
     max-width: 100vw;
     width: 100vw;
     overflow: auto;
     height: 100%;
-
     animation-name: fadeIn;
     animation-duration: 1s;
     animation-fill-mode: forwards;
+    padding-right: 5px;
 }
 
 

@@ -9,7 +9,7 @@ function HomeLayout() {
     const getProjectStyles = () => {
         return {
             flex: 1,
-            minWidth: '90%',
+            minWidth: '75%',
             transition: '1s ease-in',
             transform: `translateX(-${(active * 100)}%)`,
         }

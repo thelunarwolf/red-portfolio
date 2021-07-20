@@ -3,8 +3,11 @@
 :root {
   --background-color: #ffffff;
   --base-color: #0A1332;
+  --base-color-40: #9DA1AD;
+  --base-color-20: #CED0D6;
   --base-color-transprent: #0a1332c9;
-  --accent-color: #9BFAF3;
+  --accent-color: #04F2E2;
+  --accent-color-40: #9BFAF3;
   --text-color: #0A1332;
 }
 
@@ -30,7 +33,7 @@ h1, li {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   color: var(--text-color);
-  font-weight: lighter;
+  /* font-weight: lighter; */
 }
 
 
