@@ -1,0 +1,84 @@
+nav.nav {
+    display: flex;
+    height: 90px;
+    align-items: center;
+    padding: 0px 160px;
+}
+
+.page_layout {
+    height: calc(100vh - 150px);
+    overflow: scroll;
+}
+
+.nav_list,
+.icons {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav_list>ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.nav_item {
+    list-style: none;
+    padding: 0px 15px;
+    position: relative;
+}
+
+.home_active {
+    --currentX: 25px;
+    --currentY: 6px;
+    --width: 40px
+}
+
+.portfolio_active {
+    --currentX: 95px;
+    --currentY: 6px;
+    --width: 60px
+}
+
+.about_active {
+    --currentX: 190px;
+    --currentY: 6px;
+    --width: 40px
+}
+
+.nav_list>ul::before {
+    content: '';
+    height: 16px;
+    width: var(--width);
+    background: var(--accent-color);
+    position: absolute;
+    z-index: -1;
+    transition: 200ms;
+    transform: translate(var(--currentX), var(--currentY));
+}
+
+
+.copyright {
+    font-size: 14px;
+}
+
+.footer {
+    padding: 0px 160px;
+    display: flex;
+    height: 60px;
+    align-items:flex-start;
+}
+
+.icons {
+    column-gap: 10px;
+}
+
+.icon {
+    height: 18px;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}

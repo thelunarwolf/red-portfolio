@@ -1,0 +1,68 @@
+.about_component {
+    display: flex;
+    column-gap: 80px;
+    padding: 30px 160px;
+    height: 100%;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.left_section,
+.right_section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.left_section {
+    flex: 5;
+}
+
+.right_section {
+    align-items: center;
+    flex: 4;
+}
+
+.right_section>.image {
+    flex: 2;
+}
+
+.right_section>.title {
+    text-align: center;
+    flex: 1;
+}
+
+.title {
+    font-family: 'Limelight', cursive;
+    font-size: 32px;
+}
+
+.download {
+    text-transform: uppercase;
+    width: fit-content;
+    position: relative;
+    cursor: pointer;
+}
+
+.download:hover:before {
+    content: '';
+    height: 16px;
+    width: 100%;
+    background: var(--accent-color);
+    position: absolute;
+    z-index: -1;
+    transition: 200ms;
+    transform: translate(8px, 12px);
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100;
+    }
+}

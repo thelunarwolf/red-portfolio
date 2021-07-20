@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Open+Sans:wght@300;400;600&display=swap');
+
+:root {
+  --background-color: #ffffff;
+  --base-color: #0A1332;
+  --base-color-transprent: #0a1332c9;
+  --accent-color: #9BFAF3;
+  --text-color: #0A1332;
+}
+
 html,
 body {
   padding: 0;
@@ -13,4 +23,18 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+p,
+h1, li {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: var(--text-color);
+  font-weight: lighter;
+}
+
+
+
+::-webkit-scrollbar {
+  display: none;
 }
