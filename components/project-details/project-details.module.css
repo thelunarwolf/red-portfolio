@@ -37,6 +37,7 @@
 .project_title {
     font-family: 'Limelight', cursive;
     font-size: 32px;
+    text-align: center;
 }
 
 .details_section {
@@ -78,4 +79,17 @@
 .icon:hover {
     transform: scale(1.2);
     cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .page_data, .header {
+        padding: 20px;
+    }
+    .project_title {
+       font-size: 24px;
+    }
+    .details_section {
+        flex-direction: column;
+        row-gap: 20px;
+    }
 }
