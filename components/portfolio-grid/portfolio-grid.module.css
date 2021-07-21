@@ -20,6 +20,7 @@
     color: var(--base-color-40);
     text-transform: uppercase;
     text-align: center;
+    font-weight: 600;
 }
 
 .active_item {

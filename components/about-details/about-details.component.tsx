@@ -6,7 +6,7 @@ export default function AboutDetails() {
         <div className={styles.about_component}>
             <section className={styles.left_section}>
                 <h1 className={styles.title}>
-                    <span>Hello</span><br />
+                    <span>Hello~</span><br />
                     <span>I&apos;m Virija Tejavath</span><br />
                     <span>UI/UX Designer</span>
                 </h1>
